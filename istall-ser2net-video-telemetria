@@ -46,11 +46,11 @@ sudo rm ser2net.conf
 
 cd
 
-sudo wget kkkkkkkkkkkkkkk
+sudo wget https://github.com/5jjCopter/video-y-telemetria-con-ser2net/archive/master.zip
 
-sudo unzip xxxxxxxx
+sudo unzip master.zip
 
-cd /instalar
+cd /video-y-telemetria-con-ser2net-master
 
 sudo chmod 775 ser2net.conf
 
