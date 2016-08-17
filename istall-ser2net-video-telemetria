@@ -58,4 +58,8 @@ sudo cp ser2net.conf /etc
 
 cd
 
+sudo rm master.zip
+
+sudo rm -rf video-y-telemetria-con-ser2net-master
+
 sudo reboot
