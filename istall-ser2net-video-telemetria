@@ -58,14 +58,12 @@ sudo cp ser2net.conf /etc
 
 cd
 
+sudo rm -rf navio-master
+
 sudo rm master.zip
 
 sudo rm -rf video-y-telemetria-con-ser2net-master
 
-sudo rm -rf istall-ser2net-video-telemetria
-
-sudo rm -rf master.zip
-
-sudo rm -rf navio-master
+sudo rm istall-ser2net-video-telemetria
 
 sudo reboot
