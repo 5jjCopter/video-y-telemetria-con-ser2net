@@ -50,7 +50,7 @@ sudo wget https://github.com/5jjCopter/video-y-telemetria-con-ser2net/archive/ma
 
 sudo unzip master.zip
 
-cd /video-y-telemetria-con-ser2net-master
+cd video-y-telemetria-con-ser2net-master
 
 sudo chmod 775 ser2net.conf
 
