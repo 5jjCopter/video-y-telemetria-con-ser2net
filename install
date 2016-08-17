@@ -1,0 +1,17 @@
+sudo wget https://github.com/5jjCopter/video-y-telemetria-con-ser2net/archive/master.zip
+
+sudo unzip master.zip
+
+cd /video-y-telemetria-con-ser2net-master
+
+sudo chmod 775 install
+
+sudo cp install /home/pi
+
+sudo rm master.zip
+
+sudo rm -rf video-y-telemetria-con-ser2net-master
+
+cd
+
+sudo ./install
