@@ -56,7 +56,7 @@ sudo chmod 775 ser2net.conf
 
 sudo cp ser2net.conf /etc
 
-cd
+cd /home/pi
 
 sudo rm -rf navio-master
 
