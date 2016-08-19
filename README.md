@@ -15,4 +15,30 @@ Instalacion.
 
 6.Solo conectamos tx y rx y alimentamos raspberry pi con un bec independiente.
 
+IMAGEN DE CONECCION
+
 http://ardupilot.org/dev/_images/RaspberryPi_Pixhawk_wiring1.jpg
+
+6.Se nesesita para coneccion por wifi usb dual banda compatible con raspberry, yo utilizo csl 300.
+
+7.Tambien se requiere un punto de acceso o ruter de 5G, yo utilizo ubikiti M5
+
+6. Raspberry conecta automaticamente a ssid:ruter y comtraseña:2004123413252.
+
+7. Para cambiar ssid o comtraseña entrar en /etc/network/interfaces
+8. 
+8. Raspberry pi envia telemetria por tcp y video por gstermer por wifi 5G.
+9. 
+9. Para cambiar opciones de video entrar en. /home/pi/video
+10. 
+10.Para cambiar opciones video mobil entrar en /home/pi/video-mobil.
+
+11.Para conectar a mision Planner utilizar TCP:57600 IP:192.168.1.122 Puerto:2001.
+
+12.Para que se realice coneccion el punto de acceso tien que tener avilitado la ip fija.
+
+13.En pc tiene que tener la ip fija 192.168.1.150
+
+14.En mobil tiene que tener la ip fija 192.168.1.80.
+
+
