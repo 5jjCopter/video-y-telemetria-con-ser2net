@@ -36,10 +36,24 @@ http://ardupilot.org/dev/_images/RaspberryPi_Pixhawk_wiring1.jpg
 
 11.Para conectar a mision Planner utilizar TCP:57600 IP:192.168.1.122 Puerto:2001.
 
-12.Para que se realice coneccion el punto de acceso tien que tener avilitado la ip fija.
+12.Para que se realice coneccion el punto de acceso tiene que tener habilitado la ip fija.
 
 13.En pc tiene que tener la ip fija 192.168.1.150
 
 14.En mobil tiene que tener la ip fija 192.168.1.80.
+
+15.Para los que tengais ploblemas por alimentar pincho wifi desde raspi por el usb se puede quitar restriccion de consumo modificando el siguiente archivo:
+
+sudo nano /boot/config.txt
+
+Dentro de este archivo ponemos lo siguiente al final del archivo.
+
+max_usb_current=1
+
+safe_mode_gpio=4
+
+despues comtrol+o
+y comtrol +x.
+
 
 
