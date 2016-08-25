@@ -10,9 +10,11 @@ ALTERNATIVA:https://www.dropbox.com/s/iwme9fs5ie32fh9/mavproxy-5jjcopter.7z?dl=0
 
 3.Seguidamente con putty habrimos la consola .
 
-4.descargamos el siguiente archivo:https://github.com/5jjCopter/video-y-telemetria-con-ser2net/blob/master/install
+4.descargamos el siguiente archivo:https://github.com/5jjCopter/video-y-telemetria-con-ser2net/blob/master/install 
 
-5.Le damos a intro y esperamos a que realize la instalacion, despoues sudo reboot.
+Y lo pegaamos en la consola de putty
+
+5.Le damos a intro y esperamos a que realize la instalacion, despues: sudo reboot
 
 6.Solo conectamos tx y rx y alimentamos raspberry pi con un bec independiente.
 
@@ -27,11 +29,11 @@ http://ardupilot.org/dev/_images/RaspberryPi_Pixhawk_wiring1.jpg
 6. Raspberry conecta automaticamente a ssid:ruter y comtraseña:2004123413252.
 
 7. Para cambiar ssid o comtraseña entrar en /etc/network/interfaces
-8. 
-8. Raspberry pi envia telemetria por tcp y video por gstermer por wifi 5G.
-9. 
+
+8. Raspberry pi envia telemetria por tcp y video por gstreamer por wifi 5G.
+
 9. Para cambiar opciones de video entrar en. /home/pi/video
-10. 
+ 
 10.Para cambiar opciones video mobil entrar en /home/pi/video-mobil.
 
 11.Para conectar a mision Planner utilizar TCP:57600 IP:192.168.1.122 Puerto:2001.
@@ -54,6 +56,18 @@ safe_mode_gpio=4
 
 despues comtrol+o
 y comtrol +x.
+16. Aqui teneis plugin para ver video en mision planer:https://www.dropbox.com/sh/kpens4gs5f0p1bo/AAD9nH4-zByQ9qM0pZiQdieIa?dl=0
+
+17.Instalais mision planner y despues el plugin.
+
+18.Teneis que descargar Gstreamer e instalar en el pc.
+
+20.Aqui teneis un scripts para ver el video en pc con gstremer:https://github.com/5jjCopter/video-y-telemetria-con-ser2net/blob/master/video-pc.bat , ejecutar como administrador cuando estemos trasmitiendo video con raspberrry
+
+21.Este es el pipeline que yo utilizo en gstreamer que hay que seleccionar en el menu de configuracion.
+
+udpsrc port=9000  buffer-size=60000 ! application/x-rtp,encoding-name=H264,payload=96 ! rtph264depay ! h264parse ! queue ! avdec_h264
+
 
 
 
