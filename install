@@ -6,7 +6,11 @@ cd video-y-telemetria-con-ser2net-master
 
 sudo chmod 775 istall-ser2net-video-telemetria
 
+sudo chmod 775 istall-ser2net-video-telemetria-rpi2
+
 sudo cp istall-ser2net-video-telemetria /home/pi
+
+sudo cp istall-ser2net-video-telemetria-rpi2 /home/pi
 
 cd
 
