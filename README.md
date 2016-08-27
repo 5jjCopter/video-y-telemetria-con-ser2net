@@ -10,7 +10,8 @@ ALTERNATIVA:https://www.dropbox.com/s/iwme9fs5ie32fh9/mavproxy-5jjcopter.7z?dl=0
 
 3.Seguidamente con putty habrimos la consola .
 
-4.descargamos el siguiente archivo:https://github.com/5jjCopter/video-y-telemetria-con-ser2net/blob/master/install 
+4.descargamos el siguiente archivo para rsperry pi 3:https://github.com/5jjCopter/video-y-telemetria-con-ser2net/blob/master/install 
+Y este para rspberry pi 2:https://github.com/5jjCopter/video-y-telemetria-con-ser2net/blob/master/istall-ser2net-video-telemetria-rpi2
 
 Y lo pegaamos en la consola de putty
 
