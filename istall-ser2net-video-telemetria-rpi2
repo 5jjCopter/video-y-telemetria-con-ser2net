@@ -66,4 +66,6 @@ sudo rm -rf video-y-telemetria-con-ser2net-master
 
 sudo rm istall-ser2net-video-telemetria-rpi2
 
+sudo rm istall-ser2net-video-telemetria
+
 sudo reboot
