@@ -44,6 +44,12 @@ cd /etc
 
 sudo rm ser2net.conf
 
+cd 
+
+cd  /boot
+
+sudo rm config.txt
+
 cd
 
 sudo wget https://github.com/5jjCopter/video-y-telemetria-con-ser2net/archive/master.zip
@@ -54,7 +60,15 @@ cd video-y-telemetria-con-ser2net-master
 
 sudo chmod 775 ser2net.conf
 
+sudo chmod 775 raspi-blacklist.conf
+
+sudo chmod 775 config.txt
+
 sudo cp ser2net.conf /etc
+
+sudo cp raspi-blacklist.conf /etc/modprobe.d
+
+sudo cp config.txt /boot
 
 cd /home/pi
 
