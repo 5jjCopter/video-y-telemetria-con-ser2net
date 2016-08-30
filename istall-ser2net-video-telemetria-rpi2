@@ -10,6 +10,8 @@ sudo chmod 775 video
 
 sudo chmod 775 video-mobil
 
+sudo chmod 775 wpa_supplicant.conf
+
 sudo cp video-mobil /home/pi
 
 sudo cp video /home/pi
@@ -25,6 +27,16 @@ sudo rm interfaces
 cd /home/pi/navio-master
 
 sudo cp interfaces /etc/network
+
+cd /etc/wpa_supplicant
+
+sudo rm wpa_supplicant.conf
+
+cd /home/pi/navio-master
+
+sudo cp wpa_supplicant.conf /etc/wpa_supplicant
+
+cd
 
 sudo systemctl daemon-reload
 
