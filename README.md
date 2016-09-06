@@ -69,6 +69,9 @@ y comtrol +x.
 
 udpsrc port=9000  buffer-size=60000 ! application/x-rtp,encoding-name=H264,payload=96 ! rtph264depay ! h264parse ! queue ! avdec_h264
 
-
+Actualizacion.
+Archivo configuracion ubiquiti M5: https://drive.google.com/file/d/0B3LYYl80mki7UmNXU0RpMkRzOW8/view?usp=sharing
+Archivo configuracion Ubiquiti Lite Beam M5: https://drive.google.com/file/d/0B3LYYl80mki7SjhXN01lZzh1Nk0/view?usp=sharing
+Archivo actualizacion firmware Ubiquiti Lite Beam M5: https://drive.google.com/file/d/0B3LYYl80mki7ZHplQ1BOTjRHVFU/view?usp=sharing
 
 
