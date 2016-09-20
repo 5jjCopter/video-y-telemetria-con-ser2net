@@ -1,51 +1,65 @@
 # video-y-telemetria-con-ser2net
-Video 1080 y telemetria por wifi con ser2net
-Instalacion.
+Video 1080 y telemetria por wifi con ser2net y gstreamer
+INSTALACION.
 
-1.Descargamos la imagen iso desde:https://drive.google.com/file/d/0B3LYYl80mki7WXlOM2dyQzlPMVE/view?usp=sharing
+1.Descargamos la imagen iso.
+ALTERNATIVA
 
-ALTERNATIVA:https://www.dropbox.com/s/iwme9fs5ie32fh9/mavproxy-5jjcopter.7z?dl=0
+2.Formateamos la tarjeta con SD formater
+  a. Escribimos con Win32DiskImager la imagen en la sd.
 
-2.Escrivimos con Win32DiskImager la imagen en la sd.
+3.Seguidamente con putty habrimos la consola de raspberry .
 
-3.Seguidamente con putty habrimos la consola .
+4.Descargamos el siguiente archivo para raspberry pi 3 
+ Descargamos este para raspberry pi 2
 
-4.descargamos el siguiente archivo para rsperry pi 3:https://github.com/5jjCopter/video-y-telemetria-con-ser2net/blob/master/install 
-Y este para rspberry pi 2:https://github.com/5jjCopter/video-y-telemetria-con-ser2net/blob/master/install-rpi2
+Y lo pegamos en la consola de putty
 
-Y lo pegaamos en la consola de putty
+5.Le damos a intro y esperamos a que realice la instalación, después: sudo reboot
 
-5.Le damos a intro y esperamos a que realize la instalacion, despues: sudo reboot
-
-6.Solo conectamos tx y rx y alimentamos raspberry pi con un bec independiente.
+6.Solo conectamos tx y rx , alimentamos raspberry pi con un bec independiente.
 
 IMAGEN DE CONECCION
 
 http://ardupilot.org/dev/_images/RaspberryPi_Pixhawk_wiring1.jpg
 
-6.Se nesesita para coneccion por wifi usb dual banda compatible con raspberry, yo utilizo csl 300.
+6.Se necesita para conexión por wifi un  usb dual banda compatible con raspberry, yo utilizo csl 300.
 
 7.Tambien se requiere un punto de acceso o ruter de 5G, yo utilizo ubikiti M5
 
-6. Raspberry conecta automaticamente a ssid:ruter y comtraseña:2004123413252.
+6. Raspberry conecta automáticamente a ssid:ruter y comtraseña:2004123413252.
 
-7. Para cambiar ssid o comtraseña entrar en /etc/network/interfaces
+7. Para cambiar ssid o comtraseña entrar en cd /etc/wpa_supplicant
+Sudo nano wpa_supplicant.conf
 
-8. Raspberry pi envia telemetria por tcp y video por gstreamer por wifi 5G.
+8. Raspberry pi envía telemetría por tcp .
+ Video por UDP con gstreamer en wifi 5G.
 
 9. Para cambiar opciones de video entrar en. /home/pi/video
+Desactivar video: sudo systemctl disable video
+Activar video: sudo systemctl enable video
+Parar video: sudo systemctl stop video
+Comenzar video: sudo systemctl start video
  
 10.Para cambiar opciones video mobil entrar en /home/pi/video-mobil.
+Desactivar video: sudo systemctl disable video-mobil
+Activar video: sudo systemctl enable video-mobil
+Parar video: sudo systemctl stop video-mobil
+Comenzar video: sudo systemctl start video-mobil
 
-11.Para conectar a mision Planner utilizar TCP:57600 IP:192.168.1.122 Puerto:2001.
+11.Para conectar a mision Planner utilizar 
+TCP:57600  
+IP:192.168.1.122  
+Puerto:2001.
 
-12.Para que se realice coneccion el punto de acceso tiene que tener habilitado la ip fija.
+12.Para que se realice coneccion, el punto de acceso tiene que tener habilitado  ip fija.
+ Descargar archivo de configuración de ubiquiti M5
 
 13.En pc tiene que tener la ip fija 192.168.1.150
 
 14.En mobil tiene que tener la ip fija 192.168.1.80.
 
-15.Para los que tengais ploblemas por alimentar pincho wifi desde raspi por el usb se puede quitar restriccion de consumo modificando el siguiente archivo:
+15.Para los que tengáis problemas por alimentar pincho wifi desde raspi por el usb se puede quitar restriccion de consumo modificando el siguiente archivo:
 
 sudo nano /boot/config.txt
 
@@ -55,9 +69,9 @@ max_usb_current=1
 
 safe_mode_gpio=4
 
-despues comtrol+o
+después comtrol+o
 y comtrol +x.
-16. Aqui teneis plugin para ver video en mision planer:https://www.dropbox.com/sh/kpens4gs5f0p1bo/AAD9nH4-zByQ9qM0pZiQdieIa?dl=0
+16. Aquí tenéis plugin para ver video en misión Planer
 
 17.Instalais mision planner y despues el plugin.
 
@@ -76,5 +90,6 @@ Archivo configuracion ubiquiti M5: https://drive.google.com/file/d/0B3LYYl80mki7
 Archivo configuracion Ubiquiti Lite Beam M5: https://drive.google.com/file/d/0B3LYYl80mki7SjhXN01lZzh1Nk0/view?usp=sharing
 
 Archivo actualizacion firmware Ubiquiti Lite Beam M5: https://drive.google.com/file/d/0B3LYYl80mki7ZHplQ1BOTjRHVFU/view?usp=sharing
+
 
 
